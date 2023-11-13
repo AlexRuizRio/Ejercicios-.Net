@@ -139,40 +139,9 @@ namespace Reloj
             paisToolStripMenuItem.DropDownItems.Add(borrarPaisToolStripMenuItem);
         }
 
-        private void paisToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void añadirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxHora_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void paisToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
+       
 
       
     }

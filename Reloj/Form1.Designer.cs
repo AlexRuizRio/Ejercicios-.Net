@@ -83,23 +83,21 @@
             this.paisToolStripMenuItem.Name = "paisToolStripMenuItem";
             this.paisToolStripMenuItem.Size = new System.Drawing.Size(48, 24);
             this.paisToolStripMenuItem.Text = "Pais";
-            this.paisToolStripMenuItem.Click += new System.EventHandler(this.paisToolStripMenuItem_Click_1);
             // 
             // añadirPaisToolStripMenuItem
             // 
             this.añadirPaisToolStripMenuItem.Name = "añadirPaisToolStripMenuItem";
-            this.añadirPaisToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.añadirPaisToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.añadirPaisToolStripMenuItem.Text = "Añadir Pais";
             this.añadirPaisToolStripMenuItem.Click += new System.EventHandler(this.añadirPaísToolStripMenuItem_Click);
             // 
             // textBoxHora
             // 
             this.textBoxHora.Location = new System.Drawing.Point(113, 75);
-            this.textBoxHora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxHora.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxHora.Name = "textBoxHora";
             this.textBoxHora.Size = new System.Drawing.Size(317, 22);
             this.textBoxHora.TabIndex = 9;
-            this.textBoxHora.TextChanged += new System.EventHandler(this.textBoxHora_TextChanged);
             // 
             // label1
             // 
@@ -110,7 +108,6 @@
             this.label1.Size = new System.Drawing.Size(40, 16);
             this.label1.TabIndex = 10;
             this.label1.Text = "Hora:";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Reloj
             // 
@@ -120,7 +117,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxHora);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Reloj";
             this.Text = "Reloj";
             this.Load += new System.EventHandler(this.Form1_Load);
