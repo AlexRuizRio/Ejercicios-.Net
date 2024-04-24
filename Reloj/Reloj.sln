@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.34202.233
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34114.132
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reloj", "Reloj.csproj", "{826F1D8E-E27C-4FF4-AFEC-3EBADF6D33B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reloj", "Reloj\Reloj.csproj", "{074594E7-70F2-42B1-88FE-3944493C6451}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{826F1D8E-E27C-4FF4-AFEC-3EBADF6D33B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{826F1D8E-E27C-4FF4-AFEC-3EBADF6D33B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{826F1D8E-E27C-4FF4-AFEC-3EBADF6D33B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{826F1D8E-E27C-4FF4-AFEC-3EBADF6D33B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074594E7-70F2-42B1-88FE-3944493C6451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074594E7-70F2-42B1-88FE-3944493C6451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074594E7-70F2-42B1-88FE-3944493C6451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074594E7-70F2-42B1-88FE-3944493C6451}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E8B2A8D0-352D-4F74-B84E-5018D58198A5}
+		SolutionGuid = {102BBD1C-E449-4BDC-AD0D-57260D1AAF6F}
 	EndGlobalSection
 EndGlobal

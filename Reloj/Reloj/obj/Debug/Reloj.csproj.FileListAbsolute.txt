@@ -1,0 +1,12 @@
+C:\Users\alex_\source\repos\Reloj\Reloj\bin\Debug\Reloj.exe.config
+C:\Users\alex_\source\repos\Reloj\Reloj\bin\Debug\Reloj.exe
+C:\Users\alex_\source\repos\Reloj\Reloj\bin\Debug\Reloj.pdb
+C:\Users\alex_\source\repos\Reloj\Reloj\obj\Debug\Reloj.csproj.AssemblyReference.cache
+C:\Users\alex_\source\repos\Reloj\Reloj\obj\Debug\Reloj.Form1.resources
+C:\Users\alex_\source\repos\Reloj\Reloj\obj\Debug\Reloj.Properties.Resources.resources
+C:\Users\alex_\source\repos\Reloj\Reloj\obj\Debug\Reloj.csproj.GenerateResource.cache
+C:\Users\alex_\source\repos\Reloj\Reloj\obj\Debug\Reloj.csproj.CoreCompileInputs.cache
+C:\Users\alex_\source\repos\Reloj\Reloj\obj\Debug\Reloj.exe
+C:\Users\alex_\source\repos\Reloj\Reloj\obj\Debug\Reloj.pdb
+C:\Users\alex_\source\repos\Reloj\Reloj\obj\Debug\Reloj.FrmPais.resources
+C:\Users\alex_\source\repos\Reloj\Reloj\obj\Debug\Reloj.FormDel.resources
