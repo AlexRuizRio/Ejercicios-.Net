@@ -1,0 +1,10 @@
+C:\Users\alex_\source\repos\AccesoModoConectado\AccesoModoConectado\bin\Debug\AccesoModoConectado.exe.config
+C:\Users\alex_\source\repos\AccesoModoConectado\AccesoModoConectado\bin\Debug\AccesoModoConectado.exe
+C:\Users\alex_\source\repos\AccesoModoConectado\AccesoModoConectado\bin\Debug\AccesoModoConectado.pdb
+C:\Users\alex_\source\repos\AccesoModoConectado\AccesoModoConectado\obj\Debug\AccesoModoConectado.csproj.AssemblyReference.cache
+C:\Users\alex_\source\repos\AccesoModoConectado\AccesoModoConectado\obj\Debug\AccesoModoConectado.Form1.resources
+C:\Users\alex_\source\repos\AccesoModoConectado\AccesoModoConectado\obj\Debug\AccesoModoConectado.Properties.Resources.resources
+C:\Users\alex_\source\repos\AccesoModoConectado\AccesoModoConectado\obj\Debug\AccesoModoConectado.csproj.GenerateResource.cache
+C:\Users\alex_\source\repos\AccesoModoConectado\AccesoModoConectado\obj\Debug\AccesoModoConectado.csproj.CoreCompileInputs.cache
+C:\Users\alex_\source\repos\AccesoModoConectado\AccesoModoConectado\obj\Debug\AccesoModoConectado.exe
+C:\Users\alex_\source\repos\AccesoModoConectado\AccesoModoConectado\obj\Debug\AccesoModoConectado.pdb
