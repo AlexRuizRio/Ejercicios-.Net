@@ -33,18 +33,18 @@ namespace AccesoModoConectado
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.listProductID = new System.Windows.Forms.ListBox();
+            this.listProductName = new System.Windows.Forms.ListBox();
+            this.listUnitPrice = new System.Windows.Forms.ListBox();
+            this.listUnitInStock = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textProduct = new System.Windows.Forms.TextBox();
+            this.textProductName = new System.Windows.Forms.TextBox();
+            this.textUnitPrice = new System.Windows.Forms.TextBox();
+            this.textUnitInStock = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -88,37 +88,37 @@ namespace AccesoModoConectado
             this.label4.TabIndex = 3;
             this.label4.Text = "Unit in Stock";
             // 
-            // listBox1
+            // listProductID
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(215, 96);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(97, 355);
-            this.listBox1.TabIndex = 4;
+            this.listProductID.FormattingEnabled = true;
+            this.listProductID.Location = new System.Drawing.Point(215, 96);
+            this.listProductID.Name = "listProductID";
+            this.listProductID.Size = new System.Drawing.Size(97, 355);
+            this.listProductID.TabIndex = 4;
             // 
-            // listBox2
+            // listProductName
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(360, 96);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(133, 355);
-            this.listBox2.TabIndex = 5;
+            this.listProductName.FormattingEnabled = true;
+            this.listProductName.Location = new System.Drawing.Point(360, 96);
+            this.listProductName.Name = "listProductName";
+            this.listProductName.Size = new System.Drawing.Size(133, 355);
+            this.listProductName.TabIndex = 5;
             // 
-            // listBox3
+            // listUnitPrice
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(519, 94);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(95, 355);
-            this.listBox3.TabIndex = 6;
+            this.listUnitPrice.FormattingEnabled = true;
+            this.listUnitPrice.Location = new System.Drawing.Point(519, 94);
+            this.listUnitPrice.Name = "listUnitPrice";
+            this.listUnitPrice.Size = new System.Drawing.Size(95, 355);
+            this.listUnitPrice.TabIndex = 6;
             // 
-            // listBox4
+            // listUnitInStock
             // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.Location = new System.Drawing.Point(661, 96);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(133, 355);
-            this.listBox4.TabIndex = 7;
+            this.listUnitInStock.FormattingEnabled = true;
+            this.listUnitInStock.Location = new System.Drawing.Point(661, 96);
+            this.listUnitInStock.Name = "listUnitInStock";
+            this.listUnitInStock.Size = new System.Drawing.Size(133, 355);
+            this.listUnitInStock.TabIndex = 7;
             // 
             // label5
             // 
@@ -160,33 +160,33 @@ namespace AccesoModoConectado
             this.label8.TabIndex = 11;
             this.label8.Text = "Unit in Stock";
             // 
-            // textBox1
+            // textProduct
             // 
-            this.textBox1.Location = new System.Drawing.Point(961, 112);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 20);
-            this.textBox1.TabIndex = 12;
+            this.textProduct.Location = new System.Drawing.Point(961, 112);
+            this.textProduct.Name = "textProduct";
+            this.textProduct.Size = new System.Drawing.Size(150, 20);
+            this.textProduct.TabIndex = 12;
             // 
-            // textBox2
+            // textProductName
             // 
-            this.textBox2.Location = new System.Drawing.Point(961, 178);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 20);
-            this.textBox2.TabIndex = 13;
+            this.textProductName.Location = new System.Drawing.Point(961, 178);
+            this.textProductName.Name = "textProductName";
+            this.textProductName.Size = new System.Drawing.Size(150, 20);
+            this.textProductName.TabIndex = 13;
             // 
-            // textBox3
+            // textUnitPrice
             // 
-            this.textBox3.Location = new System.Drawing.Point(961, 235);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 20);
-            this.textBox3.TabIndex = 14;
+            this.textUnitPrice.Location = new System.Drawing.Point(961, 235);
+            this.textUnitPrice.Name = "textUnitPrice";
+            this.textUnitPrice.Size = new System.Drawing.Size(150, 20);
+            this.textUnitPrice.TabIndex = 14;
             // 
-            // textBox4
+            // textUnitInStock
             // 
-            this.textBox4.Location = new System.Drawing.Point(961, 306);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 20);
-            this.textBox4.TabIndex = 15;
+            this.textUnitInStock.Location = new System.Drawing.Point(961, 306);
+            this.textUnitInStock.Name = "textUnitInStock";
+            this.textUnitInStock.Size = new System.Drawing.Size(150, 20);
+            this.textUnitInStock.TabIndex = 15;
             // 
             // button1
             // 
@@ -198,6 +198,7 @@ namespace AccesoModoConectado
             this.button1.TabIndex = 16;
             this.button1.Text = "Actualizar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.actualizar_Click);
             // 
             // Form1
             // 
@@ -206,24 +207,25 @@ namespace AccesoModoConectado
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1163, 565);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textUnitInStock);
+            this.Controls.Add(this.textUnitPrice);
+            this.Controls.Add(this.textProductName);
+            this.Controls.Add(this.textProduct);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.listBox4);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listUnitInStock);
+            this.Controls.Add(this.listUnitPrice);
+            this.Controls.Add(this.listProductName);
+            this.Controls.Add(this.listProductID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -236,18 +238,18 @@ namespace AccesoModoConectado
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox listProductID;
+        private System.Windows.Forms.ListBox listProductName;
+        private System.Windows.Forms.ListBox listUnitPrice;
+        private System.Windows.Forms.ListBox listUnitInStock;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textProduct;
+        private System.Windows.Forms.TextBox textProductName;
+        private System.Windows.Forms.TextBox textUnitPrice;
+        private System.Windows.Forms.TextBox textUnitInStock;
         private System.Windows.Forms.Button button1;
     }
 }

@@ -71,8 +71,49 @@ namespace AccesoModoConectado
         }
         private void metodoRadiob (object sender, EventArgs e)
         {
+            RadioButton radioButton = sender as RadioButton;
+            listProductID.Items.Clear();
+            listProductName.Items.Clear();
+            listUnitInStock.Items.Clear();
+            listUnitPrice.Items.Clear();
+            int categoryId = Convert.ToInt32(radioButton.Name.Substring("radioButton".Length));
+            OleDbCommand cmd = ctn.CreateCommand();
+            cmd.CommandText = "SELECT ProductID, ProductName, UnitPrice, UnitsInStock FROM Products WHERE CategoryID = @CategoryID";
+            cmd.Parameters.AddWithValue("@CategoryID", categoryId);
 
+            // Abre la conexión si no está abierta
+            if (ctn.State != ConnectionState.Open)
+                ctn.Open();
+
+            // Ejecuta la consulta y lee los resultados
+            OleDbDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                listProductID.Items.Add(reader["ProductID"].ToString());
+                listProductName.Items.Add(reader["ProductName"].ToString());
+                listUnitInStock.Items.Add(reader["UnitPrice"].ToString());
+                listUnitPrice.Items.Add(reader["UnitsInStock"].ToString());
+            }
+
+            // Cierra el lector
+            reader.Close();
         }
-  
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ctn.Close();
+        }
+
+        private void actualizar_Click(object sender, EventArgs e)
+        {
+            OleDbCommand cmd = new OleDbCommand();
+            cmd.Connection = ctn;
+            cmd.CommandText = "Update Products set " + "ProductName='" + textProductName.Text + "', UnitPrice=" +
+            textUnitPrice.Text + ", UnitsInStock=" + textUnitInStock.Text + " where ProductID=" + textProduct.Text;
+            int registro = cmd.ExecuteNonQuery();
+            MessageBox.Show("Se ha actualizado " + registro + " registro");
+            // Después de actualizar, vuelve a llamar a metodoRadiob para actualizar los ListBox
+            metodoRadiob(null, EventArgs.Empty);
+        }
     }
 }
