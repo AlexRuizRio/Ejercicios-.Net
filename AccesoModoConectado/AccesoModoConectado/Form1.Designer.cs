@@ -103,6 +103,7 @@ namespace AccesoModoConectado
             this.listProductName.Name = "listProductName";
             this.listProductName.Size = new System.Drawing.Size(133, 355);
             this.listProductName.TabIndex = 5;
+
             // 
             // listUnitPrice
             // 

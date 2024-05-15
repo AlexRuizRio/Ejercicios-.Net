@@ -15,10 +15,16 @@ namespace AccesoModoConectado
     {
         private OleDbConnection ctn;
         private List<Categories> listcategories;
-        private List<Product> product;
         public Form1()
         {
             InitializeComponent();
+
+            // Suscribir el método listBox_SelectedIndexChanged al evento SelectedIndexChanged de ambos ListBox
+            listProductID.SelectedIndexChanged += listBox_SelectedIndexChanged;
+            listProductName.SelectedIndexChanged += listBox_SelectedIndexChanged;
+            listUnitPrice.SelectedIndexChanged += listBox_SelectedIndexChanged;
+            listUnitInStock.SelectedIndexChanged += listBox_SelectedIndexChanged;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -81,11 +87,11 @@ namespace AccesoModoConectado
             cmd.CommandText = "SELECT ProductID, ProductName, UnitPrice, UnitsInStock FROM Products WHERE CategoryID = @CategoryID";
             cmd.Parameters.AddWithValue("@CategoryID", categoryId);
 
-            // Abre la conexión si no está abierta
+            //Comprobacion de si esta abietr la conexion y la abre en el caso de que no la este
             if (ctn.State != ConnectionState.Open)
                 ctn.Open();
 
-            // Ejecuta la consulta y lee los resultados
+ 
             OleDbDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
@@ -112,8 +118,46 @@ namespace AccesoModoConectado
             textUnitPrice.Text + ", UnitsInStock=" + textUnitInStock.Text + " where ProductID=" + textProduct.Text;
             int registro = cmd.ExecuteNonQuery();
             MessageBox.Show("Se ha actualizado " + registro + " registro");
-            // Después de actualizar, vuelve a llamar a metodoRadiob para actualizar los ListBox
-            metodoRadiob(null, EventArgs.Empty);
+   
+        }
+
+        private void listBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Obtén el índice seleccionado del ListBox que generó el evento
+            int selectedIndex = ((ListBox)sender).SelectedIndex;
+
+            // Verifica si el sender es listProductID y asegúrate de que haya un ítem seleccionado
+            if (sender == listProductID && selectedIndex != -1)
+            {
+                // Establece el índice seleccionado en los otros ListBox
+                listProductName.SelectedIndex = selectedIndex;
+                listUnitPrice.SelectedIndex = selectedIndex;
+                listUnitInStock.SelectedIndex = selectedIndex;
+            }
+            // Verifica si el sender es listProductName y asegúrate de que haya un ítem seleccionado
+            else if (sender == listProductName && selectedIndex != -1)
+            {
+                // Establece el índice seleccionado en los otros ListBox
+                listProductID.SelectedIndex = selectedIndex;
+                listUnitPrice.SelectedIndex = selectedIndex;
+                listUnitInStock.SelectedIndex = selectedIndex;
+            }
+            // Verifica si el sender es listUnitPrice y asegúrate de que haya un ítem seleccionado
+            else if (sender == listUnitPrice && selectedIndex != -1)
+            {
+                // Establece el índice seleccionado en los otros ListBox
+                listProductID.SelectedIndex = selectedIndex;
+                listProductName.SelectedIndex = selectedIndex;
+                listUnitInStock.SelectedIndex = selectedIndex;
+            }
+            // Verifica si el sender es listUnitInStock y asegúrate de que haya un ítem seleccionado
+            else if (sender == listUnitInStock && selectedIndex != -1)
+            {
+                // Establece el índice seleccionado en los otros ListBox
+                listProductID.SelectedIndex = selectedIndex;
+                listProductName.SelectedIndex = selectedIndex;
+                listUnitPrice.SelectedIndex = selectedIndex;
+            }
         }
     }
 }
