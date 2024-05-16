@@ -8,3 +8,13 @@ C:\Users\alex_\source\repos\AccesoConectado2.2\AccesoConectado2.2\obj\Debug\Acce
 C:\Users\alex_\source\repos\AccesoConectado2.2\AccesoConectado2.2\obj\Debug\AccesoConectado2.2.csproj.CoreCompileInputs.cache
 C:\Users\alex_\source\repos\AccesoConectado2.2\AccesoConectado2.2\obj\Debug\AccesoConectado2.2.exe
 C:\Users\alex_\source\repos\AccesoConectado2.2\AccesoConectado2.2\obj\Debug\AccesoConectado2.2.pdb
+C:\Users\alex_\source\repos\AccesoModoConectado2.2\AccesoConectado2.2\bin\Debug\AccesoConectado2.2.exe.config
+C:\Users\alex_\source\repos\AccesoModoConectado2.2\AccesoConectado2.2\bin\Debug\AccesoConectado2.2.exe
+C:\Users\alex_\source\repos\AccesoModoConectado2.2\AccesoConectado2.2\bin\Debug\AccesoConectado2.2.pdb
+C:\Users\alex_\source\repos\AccesoModoConectado2.2\AccesoConectado2.2\obj\Debug\AccesoConectado2.2.csproj.AssemblyReference.cache
+C:\Users\alex_\source\repos\AccesoModoConectado2.2\AccesoConectado2.2\obj\Debug\AccesoConectado2._2.Form1.resources
+C:\Users\alex_\source\repos\AccesoModoConectado2.2\AccesoConectado2.2\obj\Debug\AccesoConectado2._2.Properties.Resources.resources
+C:\Users\alex_\source\repos\AccesoModoConectado2.2\AccesoConectado2.2\obj\Debug\AccesoConectado2.2.csproj.GenerateResource.cache
+C:\Users\alex_\source\repos\AccesoModoConectado2.2\AccesoConectado2.2\obj\Debug\AccesoConectado2.2.csproj.CoreCompileInputs.cache
+C:\Users\alex_\source\repos\AccesoModoConectado2.2\AccesoConectado2.2\obj\Debug\AccesoConectado2.2.exe
+C:\Users\alex_\source\repos\AccesoModoConectado2.2\AccesoConectado2.2\obj\Debug\AccesoConectado2.2.pdb
