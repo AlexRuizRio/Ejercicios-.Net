@@ -87,6 +87,7 @@ namespace AccesoConectado2._2
             lstFech.SelectedIndex = selected;
             lstid.SelectedIndex = selected;
 
+            CargarEmpleado();
         }
         private void Limpiar()
         {
@@ -97,6 +98,14 @@ namespace AccesoConectado2._2
             lstComi.Items.Clear();
             lstid.Items.Clear();
         }
+        private void LimpiarTextBox()
+        {
+            textBoxApe.Clear();
+            textBoxOfi.Clear();
+            textBoxSal.Clear();
+            textBoxFech.Clear();
+            textBoxComi.Clear();
+        }
         private void Selecion_listBoxGeneral (object sender, EventArgs e)
         {
             ListBox lst = (ListBox)sender;
@@ -106,6 +115,15 @@ namespace AccesoConectado2._2
             lstLoc.SelectedIndex = seleccion;
             lstDepid.SelectedIndex = seleccion;
         }
+        private void CargarEmpleado()
+        {
 
+            textBoxApe.Text = lstApe.SelectedItem.ToString();
+            textBoxOfi.Text = lstOfi.SelectedItem.ToString();
+            textBoxSal.Text = lstSal.SelectedItem.ToString();
+            textBoxFech.Text = lstFech.SelectedItem.ToString().Substring(0, 10);
+            textBoxComi.Text = lstComi.SelectedItem.ToString();
+
+        }
     }
 }

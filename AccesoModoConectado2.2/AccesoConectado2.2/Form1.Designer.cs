@@ -55,11 +55,11 @@ namespace AccesoConectado2._2
             this.lstComi = new System.Windows.Forms.ListBox();
             this.lstid = new System.Windows.Forms.ListBox();
             this.lstBus = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxApe = new System.Windows.Forms.TextBox();
+            this.textBoxOfi = new System.Windows.Forms.TextBox();
+            this.textBoxSal = new System.Windows.Forms.TextBox();
+            this.textBoxFech = new System.Windows.Forms.TextBox();
+            this.textBoxComi = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -387,50 +387,50 @@ namespace AccesoConectado2._2
             this.lstBus.Size = new System.Drawing.Size(220, 148);
             this.lstBus.TabIndex = 25;
             // 
-            // textBox1
+            // textBoxApe
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(26, 408);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 20);
-            this.textBox1.TabIndex = 26;
+            this.textBoxApe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBoxApe.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxApe.Location = new System.Drawing.Point(26, 408);
+            this.textBoxApe.Name = "textBoxApe";
+            this.textBoxApe.Size = new System.Drawing.Size(137, 20);
+            this.textBoxApe.TabIndex = 26;
             // 
-            // textBox2
+            // textBoxOfi
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(181, 409);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(137, 20);
-            this.textBox2.TabIndex = 27;
+            this.textBoxOfi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBoxOfi.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxOfi.Location = new System.Drawing.Point(181, 409);
+            this.textBoxOfi.Name = "textBoxOfi";
+            this.textBoxOfi.Size = new System.Drawing.Size(137, 20);
+            this.textBoxOfi.TabIndex = 27;
             // 
-            // textBox3
+            // textBoxSal
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(348, 409);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(137, 20);
-            this.textBox3.TabIndex = 28;
+            this.textBoxSal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBoxSal.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxSal.Location = new System.Drawing.Point(348, 409);
+            this.textBoxSal.Name = "textBoxSal";
+            this.textBoxSal.Size = new System.Drawing.Size(137, 20);
+            this.textBoxSal.TabIndex = 28;
             // 
-            // textBox4
+            // textBoxFech
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox4.Location = new System.Drawing.Point(512, 409);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(137, 20);
-            this.textBox4.TabIndex = 29;
+            this.textBoxFech.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBoxFech.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxFech.Location = new System.Drawing.Point(512, 409);
+            this.textBoxFech.Name = "textBoxFech";
+            this.textBoxFech.Size = new System.Drawing.Size(137, 20);
+            this.textBoxFech.TabIndex = 29;
             // 
-            // textBox5
+            // textBoxComi
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox5.Location = new System.Drawing.Point(681, 409);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(137, 20);
-            this.textBox5.TabIndex = 30;
+            this.textBoxComi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBoxComi.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxComi.Location = new System.Drawing.Point(681, 409);
+            this.textBoxComi.Name = "textBoxComi";
+            this.textBoxComi.Size = new System.Drawing.Size(137, 20);
+            this.textBoxComi.TabIndex = 30;
             // 
             // textBox6
             // 
@@ -461,11 +461,11 @@ namespace AccesoConectado2._2
             this.ClientSize = new System.Drawing.Size(1121, 677);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxComi);
+            this.Controls.Add(this.textBoxFech);
+            this.Controls.Add(this.textBoxSal);
+            this.Controls.Add(this.textBoxOfi);
+            this.Controls.Add(this.textBoxApe);
             this.Controls.Add(this.lstBus);
             this.Controls.Add(this.lstid);
             this.Controls.Add(this.lstComi);
@@ -529,11 +529,11 @@ namespace AccesoConectado2._2
         private System.Windows.Forms.ListBox lstComi;
         private System.Windows.Forms.ListBox lstid;
         private System.Windows.Forms.ListBox lstBus;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxApe;
+        private System.Windows.Forms.TextBox textBoxOfi;
+        private System.Windows.Forms.TextBox textBoxSal;
+        private System.Windows.Forms.TextBox textBoxFech;
+        private System.Windows.Forms.TextBox textBoxComi;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
     }
