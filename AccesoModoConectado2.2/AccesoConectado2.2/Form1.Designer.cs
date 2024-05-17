@@ -44,7 +44,7 @@ namespace AccesoConectado2._2
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.lstbuscar = new System.Windows.Forms.Label();
+            this.labelbuscar = new System.Windows.Forms.Label();
             this.lstDepart = new System.Windows.Forms.ListBox();
             this.lstLoc = new System.Windows.Forms.ListBox();
             this.lstDepid = new System.Windows.Forms.ListBox();
@@ -60,7 +60,7 @@ namespace AccesoConectado2._2
             this.textBoxSal = new System.Windows.Forms.TextBox();
             this.textBoxFech = new System.Windows.Forms.TextBox();
             this.textBoxComi = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBus = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -97,6 +97,7 @@ namespace AccesoConectado2._2
             this.button5.Size = new System.Drawing.Size(50, 60);
             this.button5.TabIndex = 5;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.BtnDown_Click);
             // 
             // button4
             // 
@@ -107,6 +108,7 @@ namespace AccesoConectado2._2
             this.button4.Size = new System.Drawing.Size(50, 59);
             this.button4.TabIndex = 4;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.BtnUp_Click);
             // 
             // button3
             // 
@@ -149,6 +151,7 @@ namespace AccesoConectado2._2
             this.button1.Text = "Guardar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.guardar_Click);
             // 
             // Salir
             // 
@@ -246,17 +249,17 @@ namespace AccesoConectado2._2
             this.label7.TabIndex = 14;
             this.label7.Text = "Fecha Alta";
             // 
-            // lstbuscar
+            // labelbuscar
             // 
-            this.lstbuscar.AutoSize = true;
-            this.lstbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lstbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstbuscar.ForeColor = System.Drawing.SystemColors.Control;
-            this.lstbuscar.Location = new System.Drawing.Point(21, 463);
-            this.lstbuscar.Name = "lstbuscar";
-            this.lstbuscar.Size = new System.Drawing.Size(186, 29);
-            this.lstbuscar.TabIndex = 15;
-            this.lstbuscar.Text = "BUSCAR POR:";
+            this.labelbuscar.AutoSize = true;
+            this.labelbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelbuscar.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelbuscar.Location = new System.Drawing.Point(21, 463);
+            this.labelbuscar.Name = "labelbuscar";
+            this.labelbuscar.Size = new System.Drawing.Size(186, 29);
+            this.labelbuscar.TabIndex = 15;
+            this.labelbuscar.Text = "BUSCAR POR:";
             // 
             // lstDepart
             // 
@@ -269,7 +272,7 @@ namespace AccesoConectado2._2
             this.lstDepart.Name = "lstDepart";
             this.lstDepart.Size = new System.Drawing.Size(282, 116);
             this.lstDepart.TabIndex = 16;
-            this.lstDepart.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
+            this.lstDepart.SelectedIndexChanged += new System.EventHandler(this.LstDepart_SelectedIndexChanged);
             // 
             // lstLoc
             // 
@@ -282,7 +285,7 @@ namespace AccesoConectado2._2
             this.lstLoc.Name = "lstLoc";
             this.lstLoc.Size = new System.Drawing.Size(282, 116);
             this.lstLoc.TabIndex = 17;
-            this.lstLoc.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
+            this.lstLoc.SelectedIndexChanged += new System.EventHandler(this.LstLoc_SelectedIndexChanged);
             // 
             // lstDepid
             // 
@@ -295,7 +298,6 @@ namespace AccesoConectado2._2
             this.lstDepid.Name = "lstDepid";
             this.lstDepid.Size = new System.Drawing.Size(64, 116);
             this.lstDepid.TabIndex = 18;
-            this.lstDepid.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
             // 
             // lstApe
             // 
@@ -382,7 +384,7 @@ namespace AccesoConectado2._2
             this.lstBus.ForeColor = System.Drawing.SystemColors.Window;
             this.lstBus.FormattingEnabled = true;
             this.lstBus.ItemHeight = 16;
-            this.lstBus.Location = new System.Drawing.Point(26, 505);
+            this.lstBus.Location = new System.Drawing.Point(26, 507);
             this.lstBus.Name = "lstBus";
             this.lstBus.Size = new System.Drawing.Size(220, 148);
             this.lstBus.TabIndex = 25;
@@ -432,14 +434,14 @@ namespace AccesoConectado2._2
             this.textBoxComi.Size = new System.Drawing.Size(137, 20);
             this.textBoxComi.TabIndex = 30;
             // 
-            // textBox6
+            // textBus
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(348, 578);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(266, 20);
-            this.textBox6.TabIndex = 31;
+            this.textBus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBus.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBus.Location = new System.Drawing.Point(348, 578);
+            this.textBus.Name = "textBus";
+            this.textBus.Size = new System.Drawing.Size(266, 20);
+            this.textBus.TabIndex = 31;
             // 
             // label8
             // 
@@ -460,7 +462,7 @@ namespace AccesoConectado2._2
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1121, 677);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBus);
             this.Controls.Add(this.textBoxComi);
             this.Controls.Add(this.textBoxFech);
             this.Controls.Add(this.textBoxSal);
@@ -476,7 +478,7 @@ namespace AccesoConectado2._2
             this.Controls.Add(this.lstDepid);
             this.Controls.Add(this.lstLoc);
             this.Controls.Add(this.lstDepart);
-            this.Controls.Add(this.lstbuscar);
+            this.Controls.Add(this.labelbuscar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -518,7 +520,7 @@ namespace AccesoConectado2._2
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label lstbuscar;
+        private System.Windows.Forms.Label labelbuscar;
         private System.Windows.Forms.ListBox lstDepart;
         private System.Windows.Forms.ListBox lstLoc;
         private System.Windows.Forms.ListBox lstDepid;
@@ -534,7 +536,7 @@ namespace AccesoConectado2._2
         private System.Windows.Forms.TextBox textBoxSal;
         private System.Windows.Forms.TextBox textBoxFech;
         private System.Windows.Forms.TextBox textBoxComi;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBus;
         private System.Windows.Forms.Label label8;
     }
 }
