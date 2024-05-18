@@ -87,6 +87,7 @@ namespace AccesoConectado2._2
             this.buscar.Text = "Buscar";
             this.buscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buscar.UseVisualStyleBackColor = false;
+            this.buscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // button5
             // 
@@ -123,6 +124,7 @@ namespace AccesoConectado2._2
             this.button3.Text = "Nuevo";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.nuevo_Click);
             // 
             // button2
             // 
@@ -137,6 +139,7 @@ namespace AccesoConectado2._2
             this.button2.Text = "Borrar";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.borrar_Click);
             // 
             // button1
             // 
@@ -166,6 +169,7 @@ namespace AccesoConectado2._2
             this.Salir.Text = "Salir";
             this.Salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Salir.UseVisualStyleBackColor = false;
+            this.Salir.Click += new System.EventHandler(this.PbSalir_Click);
             // 
             // label1
             // 
@@ -388,6 +392,7 @@ namespace AccesoConectado2._2
             this.lstBus.Name = "lstBus";
             this.lstBus.Size = new System.Drawing.Size(220, 148);
             this.lstBus.TabIndex = 25;
+            this.lstBus.SelectedIndexChanged += new System.EventHandler(this.LstBus_SelectedIndexChanged);
             // 
             // textBoxApe
             // 

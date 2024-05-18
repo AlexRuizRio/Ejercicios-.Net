@@ -19,10 +19,13 @@ namespace AccesoConectado2._2
         public Form1()
         {
             InitializeComponent();
+            lstDepid.Hide();
+            lstid.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             ctn = new OleDbConnection();
 
             ctn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0; " + "Data Source=C:\\temp\\emple.mdb";
@@ -30,8 +33,6 @@ namespace AccesoConectado2._2
             // Apertura de la conexión
 
             ctn.Open();
-            MessageBox.Show(ctn.State.ToString());
-
             try
             {
                 OleDbCommand cmd = ctn.CreateCommand();
@@ -53,7 +54,7 @@ namespace AccesoConectado2._2
             lstBus.Items.Add("Oficio");
             lstBus.Items.Add("Salario");
             lstBus.Items.Add("Fecha Alta");
-            lstBus.Items.Add("Comision");
+            lstBus.Items.Add("Comisión");
         }
         // FUNCION QUE SI SELECCIONAN EN LOS LISTBOX SE CARGAR LOS DATOS DEL DEPARTAMENTO O LOCALIZACION
         private void LstLoc_SelectedIndexChanged(object sender, EventArgs e)
@@ -141,7 +142,83 @@ namespace AccesoConectado2._2
             CargarEmpleados();
         }
 
+        private void borrar_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(lstid.GetItemText(lstid.SelectedItem));
+            IDbCommand cmd = new OleDbCommand();
+            cmd.Connection = ctn;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "DELETE FROM EMPLE WHERE EMP_NO = " + id;
 
+            MessageBox.Show("Empleado borrado: " + cmd.ExecuteNonQuery());
+            CargarEmpleados();
+        }
+        private void nuevo_Click(object sender, EventArgs e)
+        {
+            OleDbCommand cmd = new OleDbCommand();
+            cmd.Connection = ctn;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select max(EMP_NO) from EMPLE";
+            int numDep = Convert.ToInt32(lstDepid.GetItemText(lstDepid.SelectedItem));
+            int clave = Convert.ToInt32(cmd.ExecuteScalar());
+            clave++;
+            cmd.CommandText = "INSERT INTO EMPLE (EMP_NO, APELLIDO, OFICIO, SALARIO, FECHA_ALT, COMISION, DEPT_NO) " +
+                         "VALUES (@id, @apellido, @oficio, @salario, @fechaAlt, @comision, @deptNo)";
+
+            // Añadir parámetros a la consulta
+            cmd.Parameters.AddWithValue("@id", clave);
+            cmd.Parameters.AddWithValue("@apellido", textBoxApe.Text);
+            cmd.Parameters.AddWithValue("@oficio", textBoxOfi.Text);
+            cmd.Parameters.AddWithValue("@salario", Convert.ToDecimal(textBoxSal.Text));
+            cmd.Parameters.AddWithValue("@fechaAlt", DateTime.Now.Date);
+            cmd.Parameters.AddWithValue("@comision", Convert.ToDecimal(textBoxComi.Text));
+            cmd.Parameters.AddWithValue("@deptNo", numDep);
+            MessageBox.Show("Empleado nuevo añadido: " + cmd.ExecuteNonQuery());
+
+            CargarEmpleados();
+        }
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+
+            var var1 =textBus.Text;
+            if (busqueda.Equals("FECHA_ALT"))
+            {
+                var1 += "%";
+
+            }
+
+            IDbCommand cmd;
+            cmd = new OleDbCommand();
+            cmd.Connection = ctn;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from EMPLE where " + busqueda + " like " + "'" + var1 + "'";
+            cmd.ExecuteNonQuery();
+
+            IDataReader lector;
+            lector = cmd.ExecuteReader();
+
+            Limpiar();
+            while (lector.Read())
+            {
+                lstid.Items.Add(lector.GetValue(0));
+                lstApe.Items.Add(lector.GetString(1));
+                lstOfi.Items.Add(lector.GetString(2));
+                lstSal.Items.Add(lector.GetValue(5));
+                lstFech.Items.Add(lector.GetValue(4).ToString().Substring(0, 10));
+                lstComi.Items.Add(lector.GetValue(6));
+            }
+
+        }
+
+        private void limpiar_Click(object sender, EventArgs e)
+        {
+            textBoxApe.Clear();
+            textBoxOfi.Clear();
+            textBoxSal.Clear();
+            textBoxFech.Clear();
+            textBoxComi.Clear();
+
+        }
         //BOTONES DE SUBIR Y BAJAR EN LA LISTA DE EMPLEADOS
 
         private void BtnUp_Click(object sender, EventArgs e)
@@ -174,20 +251,28 @@ namespace AccesoConectado2._2
 
             switch (sel)
             {
-                case "Apellido":
+                case "Apellidos":
                     busqueda = "APELLIDO";
                     break;
+
                 case "Oficio":
                     busqueda = "OFICIO";
                     break;
+
                 case "Salario":
+                    busqueda = "SALARIO";
+                    break;
+
+                case "Fecha Alta":
                     busqueda = "FECHA_ALT";
                     break;
-                case "Cmision":
+
+                case "Comisión":
                     busqueda = "COMISION";
                     break;
             }
         }
+    
         // LIMPIAJE EL 1 DE LOS LISTBOX Y EL SEGUNDO DE LOS TEXTBOX
         private void Limpiar()
         {
@@ -220,23 +305,27 @@ namespace AccesoConectado2._2
                 System.Environment.Exit(1);
             }
         }
-        /*
-        private void PbMinimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
 
-        private void PbMaximizar_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-        }
-        */
+
+
+
+        /*
+private void PbMinimizar_Click(object sender, EventArgs e)
+{
+   this.WindowState = FormWindowState.Minimized;
+}
+
+private void PbMaximizar_Click(object sender, EventArgs e)
+{
+   if (this.WindowState == FormWindowState.Maximized)
+   {
+       this.WindowState = FormWindowState.Normal;
+   }
+   else
+   {
+       this.WindowState = FormWindowState.Maximized;
+   }
+}
+*/
     }
 }
