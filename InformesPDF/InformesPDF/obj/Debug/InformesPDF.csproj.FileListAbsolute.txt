@@ -1,0 +1,14 @@
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\bin\Debug\InformesPDF.exe.config
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\bin\Debug\InformesPDF.exe
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\bin\Debug\InformesPDF.pdb
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\bin\Debug\itextsharp.dll
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\bin\Debug\itextsharp.xml
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\obj\Debug\InformesPDF.csproj.AssemblyReference.cache
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\obj\Debug\InformesPDF.Form1.resources
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\obj\Debug\InformesPDF.Properties.Resources.resources
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\obj\Debug\InformesPDF.csproj.GenerateResource.cache
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\obj\Debug\InformesPDF.csproj.CoreCompileInputs.cache
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\obj\Debug\InformesPDF.csproj.CopyComplete
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\obj\Debug\InformesPDF.exe
+C:\Users\alex_\source\repos\InformesPDF\InformesPDF\obj\Debug\InformesPDF.pdb
