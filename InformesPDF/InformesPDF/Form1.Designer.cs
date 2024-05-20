@@ -93,6 +93,7 @@ namespace InformesPDF
             this.toolStripMenuItem2.Text = "Informe";
             this.toolStripMenuItem2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripMenuItem2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.btnPdf_Click);
             // 
             // Form1
             // 
