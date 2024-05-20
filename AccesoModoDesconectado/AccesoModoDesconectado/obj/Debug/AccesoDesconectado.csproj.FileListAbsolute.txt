@@ -1,0 +1,10 @@
+C:\Users\alex_\source\repos\AccesoDesconectado\AccesoDesconectado\bin\Debug\AccesoDesconectado.exe.config
+C:\Users\alex_\source\repos\AccesoDesconectado\AccesoDesconectado\bin\Debug\AccesoDesconectado.exe
+C:\Users\alex_\source\repos\AccesoDesconectado\AccesoDesconectado\bin\Debug\AccesoDesconectado.pdb
+C:\Users\alex_\source\repos\AccesoDesconectado\AccesoDesconectado\obj\Debug\AccesoDesconectado.csproj.AssemblyReference.cache
+C:\Users\alex_\source\repos\AccesoDesconectado\AccesoDesconectado\obj\Debug\AccesoDesconectado.Form1.resources
+C:\Users\alex_\source\repos\AccesoDesconectado\AccesoDesconectado\obj\Debug\AccesoDesconectado.Properties.Resources.resources
+C:\Users\alex_\source\repos\AccesoDesconectado\AccesoDesconectado\obj\Debug\AccesoDesconectado.csproj.GenerateResource.cache
+C:\Users\alex_\source\repos\AccesoDesconectado\AccesoDesconectado\obj\Debug\AccesoDesconectado.csproj.CoreCompileInputs.cache
+C:\Users\alex_\source\repos\AccesoDesconectado\AccesoDesconectado\obj\Debug\AccesoDesconectado.exe
+C:\Users\alex_\source\repos\AccesoDesconectado\AccesoDesconectado\obj\Debug\AccesoDesconectado.pdb
