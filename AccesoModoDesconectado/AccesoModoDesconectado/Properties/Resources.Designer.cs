@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AccesoDesconectado.Properties {
+namespace AccesoModoDesconectado.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace AccesoDesconectado.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AccesoDesconectado.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AccesoModoDesconectado.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace AccesoDesconectado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_borrar_64 {
+        internal static System.Drawing.Bitmap icons8_basura_llena_48 {
             get {
-                object obj = ResourceManager.GetObject("icons8-borrar-64", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-basura-llena-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,29 +73,9 @@ namespace AccesoDesconectado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_consult_64 {
+        internal static System.Drawing.Bitmap icons8_guardar_64 {
             get {
-                object obj = ResourceManager.GetObject("icons8-consult-64", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_disk_91 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-disk-91", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_disk_911 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-disk-911", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-guardar-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{02A40E23-E256-401F-B0AC-45096D54A798}</ProjectGuid>
+    <ProjectGuid>{93D8C93F-D78D-42C5-850C-1F0CA2C27C94}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>AccesoDesconectado</RootNamespace>
-    <AssemblyName>AccesoDesconectado</AssemblyName>
+    <RootNamespace>AccesoModoDesconectado</RootNamespace>
+    <AssemblyName>AccesoModoDesconectado</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -81,16 +81,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="resource\icons8-disk-91.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="resource\icons8-nuevo-48.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="resource\icons8-borrar-64.png" />
+    <None Include="resource\icons8-guardar-64.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="resource\icons8-consult-64.png" />
+    <None Include="resource\icons8-basura-llena-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

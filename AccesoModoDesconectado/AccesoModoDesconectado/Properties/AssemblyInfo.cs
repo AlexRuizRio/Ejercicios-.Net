@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("AccesoDesconectado")]
+[assembly: AssemblyTitle("AccesoModoDesconectado")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AccesoDesconectado")]
+[assembly: AssemblyProduct("AccesoModoDesconectado")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("02a40e23-e256-401f-b0ac-45096d54a798")]
+[assembly: Guid("93d8c93f-d78d-42c5-850c-1f0ca2c27c94")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
